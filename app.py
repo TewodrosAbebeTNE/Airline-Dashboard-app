@@ -30,12 +30,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.sidebar.title("Developer")
-img = Image.open(r"D:\With Python\Stream\te.jpg")
+img = Image.open("/workspaces/Airline-Dashboard-app/te.jpg")
 st.sidebar.image(img, caption="Tewodros A", use_container_width=True)
 st.write("This app analyzes airlines flight data.")
 
 try:
-    df = pd.read_csv("airlines_flights_data.csv")
+    df = pd.read_csv("/workspaces/Airline-Dashboard-app/airlines_flights_data.csv")
 except FileNotFoundError:
     st.error("CSV file 'airlines_flights_data.csv' not found.")
     st.stop()
