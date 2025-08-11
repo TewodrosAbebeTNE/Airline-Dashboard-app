@@ -1,6 +1,6 @@
 streamlit
 matplotlib
 pandas
-Pillow
+numpy
 plotly
 PIL
